@@ -1,3 +1,0 @@
-# Twitchy's Monsters
-
-###### || Hikora ||
