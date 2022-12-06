@@ -1,7 +1,10 @@
 body{
-    background-color: darkblue;
+    background-color:black;
 }
 h1{
     color: white;
     text-align: center;
+}
+h3{
+    color: white;
 }
