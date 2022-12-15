@@ -9,12 +9,60 @@
         <title>Twitchy Monsters</title>
         <link rel="stylesheet" href="style.css">
         <!-- Fix so it changes on per divice not screen size -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            div.gallery{
+                border: 1px solid white;
+            }
+            div.gallery:hover{
+                border: 1px solid white;
+            }
+            div.gallery img{
+                width: 100%;
+                height: auto;
+            }
+            div.description{
+                padding: 20px;
+                text-align: center;
+                color: white;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 25%;
+            }
+            @media only screen and (max-width: 700px){
+                .responsive{
+                    width: 50px;
+                    margin: 6px 0;
+                }  
+            }
+            @media only screen and (max-width: 500px){
+                .responsive {
+                    width: 100%;
+                }
+            }
+            .clearfix:after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
     </head>
     <body>
         <h1 style="font-size: 50px;"><a href="/">Twitchy Monsters </a></h1>
         <h2 style="border-bottom: 3px solid white; color: white;"> <a href="games"a:link>GAMES</a> | <a href="blog">BLOG</a></h2>
         <h1>Game Paragraph Here</h1>
-        <img src="images/War_Dragons.png" alt="My game War Dragons" style="max-width: 100%;height:auto;">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="wardragons">
+                    <img src="images/War_Dragons.png" alt="My game War Dragons">
+                </a>
+                <div class="description">Here is my game War Dragons.<br> Click on image to view more.</div>
+            </div>
+        </div>
     </body> 
 </html>
