@@ -8,12 +8,86 @@
         <meta charset="utf-8" />
         <title>Twitchy Monsters</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: 'Cormorant Garamond', serif;
+                padding: 10px;
+                background: rgb(0,0,0);
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+            }
+            .topnav a{
+                float: left;
+                color: rgb(255,255,255);
+                text-align: right;
+                padding: 6px 6px;
+                text-decoration: none;
+            }
+            .topnav a:hover{
+                background-color: rgb(0, 0, 0);
+                color: rgb(255,255,255);
+            }
+            /* Creates unequal columns that float by eachother */
+            .leftcolumn {
+                float: left;
+                width: 75%;
+            }
+            .rightcolumn {
+                float: left;
+                width: 25%;
+                background-color: rgb(0, 33, 122);
+                padding: 20px;
+            }
+            .fakeimg{
+                background-color: rgb(0, 51, 190);
+                width: 100%;
+                padding: 20px;
+            }
+            .card{
+                background-color: rgb(0, 33, 122);
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: rgb(0,0,0);
+                margin-top: 20px;
+            }
+
+            /* Responsive layout if screen is less than 800px, make them stack ontop of eachother*/
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            /* same as last responsive layout but only if screen is less that 400px then stack ontop with navigation line on top.*/
+            @media screen and (max-width: 800px){
+                .topnav a{
+                    float:none;
+                    width: 100%;
+                }
+            }
+        </style>
     </head>
     <body>
-        <h1 style="font-size: 50px;"><a href="/">Twitchy Monsters </a></h1>
-        <h2 style="border-bottom: 3px solid white; color: white;"> <a href="games"a:link>GAMES</a> | <a href="blog">BLOG</a></h2>
-        <br>
-        <h1>WAR DRAGONS</h1>
-        <h3>Put War Dragons Here</h3>
+        <div class="header">
+            <h1><a href="/">Twitchy Monsters</a></h1>
+        </div>
+        <div class="topnav">
+            <a href="games">GAMES</a>
+            <a href="blogs">BLOGS</a>
+        </div>
     </body> 
 </html>
